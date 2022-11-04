@@ -1,6 +1,9 @@
 # img_ai_prep
-More intelligently crop photos for ingestion to ML models. 
-Supports two major workflows that will be useful to produce higher quality images:
+Image-based machine learning models often require square images of uniform size.
+Existing code to process images for ingestion into ML models often use naively cropped images to save on computation costs, 
+but what about in data-constrained environments such as fine-tuning? 
+This library helps you to more intelligently crop photos for ingestion to your ML models, to improve data efficiency. 
+It supports two major workflows that will be useful to produce higher quality images:
 
 ### resize_center_crop
 1. Resize the image with the shortest side matching the desired end size
